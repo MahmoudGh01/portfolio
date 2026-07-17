@@ -1,22 +1,17 @@
 import {
   type IconType,
-  SiAstro,
-  SiBootstrap,
   SiCss3,
-  SiDocker,
   SiHtml5,
   SiJavascript,
-  SiMongodb,
-  SiMysql,
   SiNextdotjs,
-  SiNginx,
   SiNodedotjs,
-  SiPostgresql,
   SiReact,
-  SiRedis,
-  SiRubyonrails,
-  SiSass,
   SiTailwindcss,
+  SiTypescript,
+  SiPython,
+  SiMysql,
+  SiPostgresql,
+  SiGit,
 } from '@icons-pack/react-simple-icons'
 
 const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
@@ -27,51 +22,34 @@ const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
         { skill: 'html', icon: SiHtml5 },
         { skill: 'css', icon: SiCss3 },
         { skill: 'javascript', icon: SiJavascript },
+        { skill: 'typescript', icon: SiTypescript },
         { skill: 'react', icon: SiReact },
-        { skill: 'sass', icon: SiSass },
         { skill: 'tailwind', icon: SiTailwindcss },
         { skill: 'nextjs', icon: SiNextdotjs },
-        { skill: 'astro', icon: SiAstro },
-        {
-          skill: 'bootstrap',
-          icon: SiBootstrap,
-        },
       ],
     },
     {
-      field: 'Backend',
+      field: 'Backend & Tools',
       skills: [
         {
           skill: 'nodejs',
           icon: SiNodedotjs,
         },
         {
-          skill: 'ruby on rails',
-          icon: SiRubyonrails,
-        },
-        {
-          skill: 'redis',
-          icon: SiRedis,
+          skill: 'python',
+          icon: SiPython,
         },
         {
           skill: 'postgresql',
           icon: SiPostgresql,
         },
         {
-          skill: 'mongodb',
-          icon: SiMongodb,
-        },
-        {
           skill: 'mysql',
           icon: SiMysql,
         },
         {
-          skill: 'nginx',
-          icon: SiNginx,
-        },
-        {
-          skill: 'docker',
-          icon: SiDocker,
+          skill: 'git',
+          icon: SiGit,
         },
       ],
     },
