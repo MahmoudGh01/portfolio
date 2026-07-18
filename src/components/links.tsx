@@ -1,12 +1,12 @@
-import {
-  IconType,
-  SiGithub,
-  SiGmail,
-  SiLinkedin,
-} from '@icons-pack/react-simple-icons'
+import type { ComponentType, SVGProps } from 'react'
+import { SiGithub, SiGmail } from '@icons-pack/react-simple-icons'
+import { Linkedin } from 'lucide-react'
 
 export default function Links() {
-  const links: { icon: IconType; href: string }[] = [
+  const links: {
+    icon: ComponentType<SVGProps<SVGSVGElement>>
+    href: string
+  }[] = [
     {
       icon: SiGmail,
       href: 'mailto:hello@example.com',
@@ -16,7 +16,7 @@ export default function Links() {
       href: 'https://github.com/MahmoudGh01',
     },
     {
-      icon: SiLinkedin,
+      icon: Linkedin,
       href: 'https://www.linkedin.com/in/mahmoud-gharbi/',
     },
   ]
@@ -26,7 +26,7 @@ export default function Links() {
       {links.map((link, id) => {
         return (
           <a target="_blank" key={id} href={link.href}>
-            <link.icon title="" />
+            <link.icon />
           </a>
         )
       })}

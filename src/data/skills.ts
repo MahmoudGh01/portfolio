@@ -1,6 +1,6 @@
 import {
   type IconType,
-  SiCss3,
+  SiCss,
   SiHtml5,
   SiJavascript,
   SiNextdotjs,
@@ -20,7 +20,7 @@ const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
       field: 'Frontend',
       skills: [
         { skill: 'html', icon: SiHtml5 },
-        { skill: 'css', icon: SiCss3 },
+        { skill: 'css', icon: SiCss },
         { skill: 'javascript', icon: SiJavascript },
         { skill: 'typescript', icon: SiTypescript },
         { skill: 'react', icon: SiReact },
